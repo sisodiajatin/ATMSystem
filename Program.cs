@@ -35,7 +35,7 @@ namespace ATMSystem
         {
             while (true)
             {
-                Console.WriteLine("Welcome to the ATM System");
+                Console.WriteLine("Welcome to the ATM System - Version 1.0");
                 Console.Write("Enter login: ");
                 string? login = Console.ReadLine();
                 Console.Write("Enter Pin code: ");
