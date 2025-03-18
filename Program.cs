@@ -69,29 +69,31 @@ namespace ATMSystem
                 {
                     case "1":
                         Console.Write("Enter the withdrawal amount: ");
-                        if (decimal.TryParse(Console.ReadLine(), out decimal amount) && amount > 0)
+                        if (decimal.TryParse(Console.ReadLine(), out decimal amount) && amount > 0 && amount <= 1000000)
                         {
                             try
                             {
                                 _accountService.Withdraw(accountNumber, amount);
-                                Console.WriteLine($"Cash Successfully Withdrawn. Balance: {_accountService.GetBalance(accountNumber)}");
+                                Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Withdraw: {amount:C} from account {accountNumber}");
+                                Console.WriteLine($"Cash Successfully Withdrawn. Balance: {_accountService.GetBalance(accountNumber):C}");
                             }
                             catch (Exception ex)
                             {
                                 Console.WriteLine($"Error: {ex.Message}");
                             }
                         }
-                        else Console.WriteLine("Invalid amount.");
+                        else Console.WriteLine("Invalid amount. Must be positive and not exceed 1,000,000.");
                         break;
 
                     case "3":
                         Console.Write("Enter the cash amount to deposit: ");
-                        if (decimal.TryParse(Console.ReadLine(), out decimal depositAmount) && depositAmount > 0)
+                        if (decimal.TryParse(Console.ReadLine(), out decimal depositAmount) && depositAmount > 0 && depositAmount <= 1000000)
                         {
                             _accountService.Deposit(accountNumber, depositAmount);
-                            Console.WriteLine($"Cash Deposited Successfully. Balance: {_accountService.GetBalance(accountNumber)}");
+                            Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Deposit: {depositAmount:C} to account {accountNumber}");
+                            Console.WriteLine($"Cash Deposited Successfully. Balance: {_accountService.GetBalance(accountNumber):C}");
                         }
-                        else Console.WriteLine("Invalid amount.");
+                        else Console.WriteLine("Invalid amount. Must be positive and not exceed 1,000,000.");
                         break;
 
                     case "4":
