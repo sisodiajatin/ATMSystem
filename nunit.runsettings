@@ -1,0 +1,6 @@
+<RunSettings>
+  <NUnit>
+    <NumberOfTestWorkers>4</NumberOfTestWorkers>
+    <TestLevelOfParallelism>4</TestLevelOfParallelism>
+  </NUnit>
+</RunSettings>

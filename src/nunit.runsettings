@@ -1,0 +1,7 @@
+<RunSettings>
+  <NUnit>
+    <NumberOfTestWorkers>16</NumberOfTestWorkers>
+    <TestLevelOfParallelism>16</TestLevelOfParallelism>
+    <ForceParallel>true</ForceParallel>
+  </NUnit>
+</RunSettings>

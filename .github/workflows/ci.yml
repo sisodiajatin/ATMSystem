@@ -1,0 +1,40 @@
+name: CI with Codecov
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+
+    - name: Test with AltCover
+      run: dotnet test --no-build --verbosity normal /p:AltCover=true /p:AltCoverFormat=OpenCover /p:AltCoverXmlReport=coverage.xml
+
+    - name: Convert coverage report
+      run: |
+        dotnet tool install -g dotnet-reportgenerator-globaltool
+        reportgenerator -reports:"D:\ATMSystem\src\ATMSystem.Tests\coverage.xml" -targetdir:"D:\ATMSystem\coveragereport" -reporttypes:Html;Cobertura
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v4
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: ./coveragereport/Cobertura.xml
+        fail_ci_if_error: true
