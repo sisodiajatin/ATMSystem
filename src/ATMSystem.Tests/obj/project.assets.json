@@ -35,6 +35,13 @@
           }
         }
       },
+      "coverlet.msbuild/6.0.4": {
+        "type": "package",
+        "build": {
+          "build/coverlet.msbuild.props": {},
+          "build/coverlet.msbuild.targets": {}
+        }
+      },
       "Microsoft.CodeCoverage/17.11.1": {
         "type": "package",
         "compile": {
@@ -817,6 +824,47 @@
         "lib/netstandard2.1/Castle.Core.dll",
         "lib/netstandard2.1/Castle.Core.xml",
         "readme.txt"
+      ]
+    },
+    "coverlet.msbuild/6.0.4": {
+      "sha512": "Qa7Hg+wrOMDKpXVn2dw4Wlun490bIWsFW0fdNJQFJLZnbU27MCP0HJ2mPgS+3EQBQUb0zKlkwiQzP+j38Hc3Iw==",
+      "type": "package",
+      "path": "coverlet.msbuild/6.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "MSBuildIntegration.md",
+        "build/coverlet.msbuild.props",
+        "build/coverlet.msbuild.targets",
+        "coverlet-icon.png",
+        "coverlet.msbuild.6.0.4.nupkg.sha512",
+        "coverlet.msbuild.nuspec",
+        "tasks/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "tasks/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "tasks/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "tasks/netstandard2.0/Microsoft.Extensions.DependencyModel.dll",
+        "tasks/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "tasks/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "tasks/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "tasks/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "tasks/netstandard2.0/Mono.Cecil.dll",
+        "tasks/netstandard2.0/Newtonsoft.Json.dll",
+        "tasks/netstandard2.0/NuGet.Versioning.dll",
+        "tasks/netstandard2.0/System.Buffers.dll",
+        "tasks/netstandard2.0/System.Collections.Immutable.dll",
+        "tasks/netstandard2.0/System.Memory.dll",
+        "tasks/netstandard2.0/System.Numerics.Vectors.dll",
+        "tasks/netstandard2.0/System.Reflection.Metadata.dll",
+        "tasks/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "tasks/netstandard2.0/System.Text.Encodings.Web.dll",
+        "tasks/netstandard2.0/System.Text.Json.dll",
+        "tasks/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "tasks/netstandard2.0/coverlet.core.dll",
+        "tasks/netstandard2.0/coverlet.core.pdb",
+        "tasks/netstandard2.0/coverlet.core.xml",
+        "tasks/netstandard2.0/coverlet.msbuild.tasks.deps.json",
+        "tasks/netstandard2.0/coverlet.msbuild.tasks.dll",
+        "tasks/netstandard2.0/coverlet.msbuild.tasks.pdb"
       ]
     },
     "Microsoft.CodeCoverage/17.11.1": {
@@ -1748,7 +1796,8 @@
       "Microsoft.NET.Test.Sdk >= 17.11.1",
       "NSubstitute >= 5.1.0",
       "NUnit >= 4.2.2",
-      "NUnit3TestAdapter >= 4.6.0"
+      "NUnit3TestAdapter >= 4.6.0",
+      "coverlet.msbuild >= 6.0.4"
     ]
   },
   "packageFolders": {
@@ -1758,11 +1807,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ATMSystem\\src\\ATMSystem.Tests\\ATMSystem.Tests.csproj",
+      "projectUniqueName": "D:\\FInal509\\ATMSystem\\src\\ATMSystem.Tests\\ATMSystem.Tests.csproj",
       "projectName": "ATMSystem.Tests",
-      "projectPath": "D:\\ATMSystem\\src\\ATMSystem.Tests\\ATMSystem.Tests.csproj",
+      "projectPath": "D:\\FInal509\\ATMSystem\\src\\ATMSystem.Tests\\ATMSystem.Tests.csproj",
       "packagesPath": "C:\\Users\\bnsis\\.nuget\\packages\\",
-      "outputPath": "D:\\ATMSystem\\src\\ATMSystem.Tests\\obj\\",
+      "outputPath": "D:\\FInal509\\ATMSystem\\src\\ATMSystem.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1783,8 +1832,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\ATMSystem\\src\\ATMSystem\\ATMSystem.csproj": {
-              "projectPath": "D:\\ATMSystem\\src\\ATMSystem\\ATMSystem.csproj"
+            "D:\\FInal509\\ATMSystem\\src\\ATMSystem\\ATMSystem.csproj": {
+              "projectPath": "D:\\FInal509\\ATMSystem\\src\\ATMSystem\\ATMSystem.csproj"
             }
           }
         }
@@ -1824,6 +1873,12 @@
           "NUnit3TestAdapter": {
             "target": "Package",
             "version": "[4.6.0, )"
+          },
+          "coverlet.msbuild": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.0.4, )"
           }
         },
         "imports": [

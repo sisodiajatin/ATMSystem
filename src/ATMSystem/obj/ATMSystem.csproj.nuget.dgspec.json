@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ATMSystem\\src\\ATMSystem\\ATMSystem.csproj": {}
+    "D:\\FInal509\\ATMSystem\\src\\ATMSystem\\ATMSystem.csproj": {}
   },
   "projects": {
-    "D:\\ATMSystem\\src\\ATMSystem\\ATMSystem.csproj": {
+    "D:\\FInal509\\ATMSystem\\src\\ATMSystem\\ATMSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ATMSystem\\src\\ATMSystem\\ATMSystem.csproj",
+        "projectUniqueName": "D:\\FInal509\\ATMSystem\\src\\ATMSystem\\ATMSystem.csproj",
         "projectName": "ATMSystem",
-        "projectPath": "D:\\ATMSystem\\src\\ATMSystem\\ATMSystem.csproj",
+        "projectPath": "D:\\FInal509\\ATMSystem\\src\\ATMSystem\\ATMSystem.csproj",
         "packagesPath": "C:\\Users\\bnsis\\.nuget\\packages\\",
-        "outputPath": "D:\\ATMSystem\\src\\ATMSystem\\obj\\",
+        "outputPath": "D:\\FInal509\\ATMSystem\\src\\ATMSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

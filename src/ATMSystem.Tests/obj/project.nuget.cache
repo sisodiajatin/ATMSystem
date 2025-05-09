@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "w0W2JB6vrJg=",
+  "dgSpecHash": "swKbG5irbko=",
   "success": true,
-  "projectFilePath": "D:\\ATMSystem\\src\\ATMSystem.Tests\\ATMSystem.Tests.csproj",
+  "projectFilePath": "D:\\FInal509\\ATMSystem\\src\\ATMSystem.Tests\\ATMSystem.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bnsis\\.nuget\\packages\\altcover\\8.8.53\\altcover.8.8.53.nupkg.sha512",
     "C:\\Users\\bnsis\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\bnsis\\.nuget\\packages\\coverlet.msbuild\\6.0.4\\coverlet.msbuild.6.0.4.nupkg.sha512",
     "C:\\Users\\bnsis\\.nuget\\packages\\microsoft.codecoverage\\17.11.1\\microsoft.codecoverage.17.11.1.nupkg.sha512",
     "C:\\Users\\bnsis\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\bnsis\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

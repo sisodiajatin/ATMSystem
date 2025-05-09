@@ -1,0 +1,916 @@
+{
+  "ATMSystem.dll": {
+    "D:\\FInal509\\ATMSystem\\src\\ATMSystem\\Services\\AccountService.cs": {
+      "ATMSystem.Services.AccountService": {
+        "ATMSystem.Models.Account ATMSystem.Services.AccountService::CreateAccount(System.String,System.String,System.String,System.Decimal,System.String)": {
+          "Lines": {
+            "23": 10,
+            "24": 10,
+            "25": 3,
+            "26": 7,
+            "27": 5,
+            "28": 2,
+            "29": 1,
+            "31": 1,
+            "32": 1,
+            "33": 1,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 9
+            },
+            {
+              "Line": 24,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 8
+            },
+            {
+              "Line": 24,
+              "Offset": 7,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 24,
+              "Offset": 15,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 24,
+              "Offset": 28,
+              "EndOffset": 30,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 3
+            },
+            {
+              "Line": 24,
+              "Offset": 28,
+              "EndOffset": 41,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 7
+            },
+            {
+              "Line": 26,
+              "Offset": 48,
+              "EndOffset": 50,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 4
+            },
+            {
+              "Line": 26,
+              "Offset": 48,
+              "EndOffset": 88,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 3
+            },
+            {
+              "Line": 26,
+              "Offset": 93,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 5
+            },
+            {
+              "Line": 26,
+              "Offset": 93,
+              "EndOffset": 106,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 2
+            },
+            {
+              "Line": 28,
+              "Offset": 122,
+              "EndOffset": 124,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 1
+            },
+            {
+              "Line": 28,
+              "Offset": 122,
+              "EndOffset": 135,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 1
+            },
+            {
+              "Line": 32,
+              "Offset": 156,
+              "EndOffset": 158,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 1
+            },
+            {
+              "Line": 32,
+              "Offset": 156,
+              "EndOffset": 169,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 211,
+              "EndOffset": 213,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 211,
+              "EndOffset": 225,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean ATMSystem.Services.AccountService::DeleteAccount(System.Int32)": {
+          "Lines": {
+            "46": 2,
+            "47": 2,
+            "48": 2
+          },
+          "Branches": []
+        },
+        "ATMSystem.Models.Account ATMSystem.Services.AccountService::UpdateAccount(System.Int32,System.Decimal,System.String)": {
+          "Lines": {
+            "56": 3,
+            "57": 3,
+            "58": 3,
+            "59": 1,
+            "61": 2,
+            "62": 0,
+            "64": 2,
+            "65": 2,
+            "66": 2,
+            "67": 2,
+            "68": 2
+          },
+          "Branches": [
+            {
+              "Line": 58,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 58,
+              "Offset": 20,
+              "EndOffset": 33,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 61,
+              "Offset": 41,
+              "EndOffset": 43,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 61,
+              "Offset": 41,
+              "EndOffset": 59,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            }
+          ]
+        },
+        "ATMSystem.Models.Account ATMSystem.Services.AccountService::FindByNumber(System.Int32)": {
+          "Lines": {
+            "74": 2,
+            "75": 2,
+            "76": 2
+          },
+          "Branches": []
+        },
+        "ATMSystem.Models.Account ATMSystem.Services.AccountService::FindAccount(System.String,System.String)": {
+          "Lines": {
+            "83": 6,
+            "84": 6,
+            "85": 6,
+            "86": 2,
+            "87": 4,
+            "88": 6
+          },
+          "Branches": [
+            {
+              "Line": 85,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 4
+            },
+            {
+              "Line": 85,
+              "Offset": 15,
+              "EndOffset": 31,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 85,
+              "Offset": 34,
+              "EndOffset": 36,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 85,
+              "Offset": 34,
+              "EndOffset": 40,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            }
+          ]
+        },
+        "System.Void ATMSystem.Services.AccountService::Withdraw(System.Int32,System.Decimal)": {
+          "Lines": {
+            "96": 8,
+            "97": 8,
+            "98": 8,
+            "99": 1,
+            "100": 7,
+            "101": 4,
+            "102": 3,
+            "103": 1,
+            "105": 2,
+            "106": 2,
+            "107": 2
+          },
+          "Branches": [
+            {
+              "Line": 98,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 98,
+              "Offset": 20,
+              "EndOffset": 33,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 7
+            },
+            {
+              "Line": 100,
+              "Offset": 44,
+              "EndOffset": 46,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 4
+            },
+            {
+              "Line": 100,
+              "Offset": 44,
+              "EndOffset": 64,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 3
+            },
+            {
+              "Line": 100,
+              "Offset": 67,
+              "EndOffset": 69,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 4
+            },
+            {
+              "Line": 100,
+              "Offset": 67,
+              "EndOffset": 80,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 3
+            },
+            {
+              "Line": 102,
+              "Offset": 94,
+              "EndOffset": 96,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 102,
+              "Offset": 94,
+              "EndOffset": 107,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Void ATMSystem.Services.AccountService::Deposit(System.Int32,System.Decimal)": {
+          "Lines": {
+            "115": 7,
+            "116": 7,
+            "117": 7,
+            "118": 1,
+            "119": 6,
+            "120": 4,
+            "122": 2,
+            "123": 2,
+            "124": 2
+          },
+          "Branches": [
+            {
+              "Line": 117,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 117,
+              "Offset": 20,
+              "EndOffset": 33,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            },
+            {
+              "Line": 119,
+              "Offset": 44,
+              "EndOffset": 46,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 3
+            },
+            {
+              "Line": 119,
+              "Offset": 44,
+              "EndOffset": 64,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 3
+            },
+            {
+              "Line": 119,
+              "Offset": 67,
+              "EndOffset": 69,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 4
+            },
+            {
+              "Line": 119,
+              "Offset": 67,
+              "EndOffset": 80,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 2
+            }
+          ]
+        },
+        "System.Decimal ATMSystem.Services.AccountService::GetBalance(System.Int32)": {
+          "Lines": {
+            "131": 2,
+            "132": 2,
+            "133": 2,
+            "134": 1,
+            "135": 1,
+            "136": 1
+          },
+          "Branches": [
+            {
+              "Line": 133,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 133,
+              "Offset": 20,
+              "EndOffset": 33,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void ATMSystem.Services.AccountService::.ctor(ATMSystem.Repositories.IAccountRepository)": {
+          "Lines": {
+            "12": 39,
+            "13": 39,
+            "14": 39,
+            "15": 38
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 14,
+              "Offset": 11,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 38
+            }
+          ]
+        }
+      }
+    },
+    "D:\\FInal509\\ATMSystem\\src\\ATMSystem\\Repositories\\MySqlAccountRepository.cs": {
+      "ATMSystem.Repositories.MySqlAccountRepository": {
+        "System.Void ATMSystem.Repositories.MySqlAccountRepository::Save(ATMSystem.Models.Account)": {
+          "Lines": {
+            "22": 2,
+            "23": 2,
+            "24": 2,
+            "25": 2,
+            "26": 2,
+            "27": 2,
+            "28": 2,
+            "29": 2,
+            "30": 2,
+            "31": 2,
+            "32": 2,
+            "33": 2,
+            "34": 2,
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1,
+            "40": 0,
+            "41": 1,
+            "42": 1,
+            "43": 2
+          },
+          "Branches": [
+            {
+              "Line": 35,
+              "Offset": 152,
+              "EndOffset": 154,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 39,
+              "Offset": 182,
+              "EndOffset": 184,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 182,
+              "EndOffset": 195,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 35,
+              "Offset": 152,
+              "EndOffset": 209,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Boolean ATMSystem.Repositories.MySqlAccountRepository::Delete(System.Int32)": {
+          "Lines": {
+            "50": 3,
+            "51": 3,
+            "52": 3,
+            "53": 3,
+            "54": 3,
+            "55": 3,
+            "56": 3,
+            "57": 2
+          },
+          "Branches": []
+        },
+        "System.Void ATMSystem.Repositories.MySqlAccountRepository::Update(ATMSystem.Models.Account)": {
+          "Lines": {
+            "64": 3,
+            "65": 3,
+            "66": 3,
+            "67": 3,
+            "68": 3,
+            "69": 3,
+            "70": 3,
+            "71": 3,
+            "72": 3,
+            "73": 2,
+            "74": 1,
+            "75": 2
+          },
+          "Branches": [
+            {
+              "Line": 73,
+              "Offset": 116,
+              "EndOffset": 118,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 73,
+              "Offset": 116,
+              "EndOffset": 129,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "ATMSystem.Models.Account ATMSystem.Repositories.MySqlAccountRepository::FindByNumber(System.Int32)": {
+          "Lines": {
+            "82": 4,
+            "83": 4,
+            "84": 4,
+            "85": 4,
+            "86": 4,
+            "87": 4,
+            "88": 4,
+            "89": 3,
+            "90": 3
+          },
+          "Branches": [
+            {
+              "Line": 89,
+              "Offset": 70,
+              "EndOffset": 72,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 89,
+              "Offset": 70,
+              "EndOffset": 75,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "ATMSystem.Models.Account ATMSystem.Repositories.MySqlAccountRepository::FindByLogin(System.String)": {
+          "Lines": {
+            "97": 3,
+            "98": 3,
+            "99": 3,
+            "100": 3,
+            "101": 3,
+            "102": 3,
+            "103": 3,
+            "104": 2,
+            "105": 2
+          },
+          "Branches": [
+            {
+              "Line": 104,
+              "Offset": 65,
+              "EndOffset": 67,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 104,
+              "Offset": 65,
+              "EndOffset": 70,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void ATMSystem.Repositories.MySqlAccountRepository::AddParameter(System.Data.IDbCommand,System.String,System.Object)": {
+          "Lines": {
+            "111": 29,
+            "112": 29,
+            "113": 29,
+            "114": 29,
+            "115": 29,
+            "116": 29
+          },
+          "Branches": [
+            {
+              "Line": 114,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 114,
+              "Offset": 19,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 29
+            }
+          ]
+        },
+        "ATMSystem.Models.Account ATMSystem.Repositories.MySqlAccountRepository::MapToAccount(System.Data.IDataReader)": {
+          "Lines": {
+            "122": 3,
+            "123": 3,
+            "124": 3,
+            "125": 3,
+            "126": 3,
+            "127": 3,
+            "128": 3,
+            "129": 3,
+            "130": 3,
+            "131": 3
+          },
+          "Branches": []
+        },
+        "System.Void ATMSystem.Repositories.MySqlAccountRepository::.ctor(ATMSystem.Repositories.IDbConnectionFactory)": {
+          "Lines": {
+            "12": 16,
+            "13": 16,
+            "14": 16,
+            "15": 15
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 14,
+              "Offset": 11,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 15
+            }
+          ]
+        }
+      }
+    },
+    "D:\\FInal509\\ATMSystem\\src\\ATMSystem\\Repositories\\MySqlConnectionFactory.cs": {
+      "ATMSystem.Repositories.MySqlConnectionFactory": {
+        "System.Data.IDbConnection ATMSystem.Repositories.MySqlConnectionFactory::CreateConnection()": {
+          "Lines": {
+            "19": 1,
+            "20": 1,
+            "21": 1
+          },
+          "Branches": []
+        },
+        "System.Void ATMSystem.Repositories.MySqlConnectionFactory::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "12": 3,
+            "13": 3,
+            "14": 3,
+            "15": 3,
+            "16": 2
+          },
+          "Branches": [
+            {
+              "Line": 14,
+              "Offset": 21,
+              "EndOffset": 23,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 14,
+              "Offset": 21,
+              "EndOffset": 35,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        }
+      }
+    },
+    "D:\\FInal509\\ATMSystem\\src\\ATMSystem\\Models\\Account.cs": {
+      "ATMSystem.Models.Account": {
+        "System.Int32 ATMSystem.Models.Account::GetAccountNumber()": {
+          "Lines": {
+            "24": 13
+          },
+          "Branches": []
+        },
+        "System.Void ATMSystem.Models.Account::SetAccountNumber(System.Int32)": {
+          "Lines": {
+            "25": 2
+          },
+          "Branches": []
+        },
+        "System.String ATMSystem.Models.Account::GetHolderName()": {
+          "Lines": {
+            "26": 6
+          },
+          "Branches": []
+        },
+        "System.Decimal ATMSystem.Models.Account::GetBalance()": {
+          "Lines": {
+            "27": 29
+          },
+          "Branches": []
+        },
+        "System.Void ATMSystem.Models.Account::SetBalance(System.Decimal)": {
+          "Lines": {
+            "28": 10
+          },
+          "Branches": [
+            {
+              "Line": 28,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 28,
+              "Offset": 12,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 9
+            }
+          ]
+        },
+        "System.String ATMSystem.Models.Account::GetStatus()": {
+          "Lines": {
+            "29": 15
+          },
+          "Branches": []
+        },
+        "System.Void ATMSystem.Models.Account::SetStatus(System.String)": {
+          "Lines": {
+            "30": 5
+          },
+          "Branches": [
+            {
+              "Line": 30,
+              "Offset": 3,
+              "EndOffset": 5,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 30,
+              "Offset": 3,
+              "EndOffset": 11,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 5
+            }
+          ]
+        },
+        "System.String ATMSystem.Models.Account::GetLogin()": {
+          "Lines": {
+            "31": 8
+          },
+          "Branches": []
+        },
+        "System.String ATMSystem.Models.Account::GetPinCode()": {
+          "Lines": {
+            "32": 9
+          },
+          "Branches": []
+        },
+        "System.Void ATMSystem.Models.Account::.ctor(System.Int32,System.String,System.Decimal,System.String,System.String,System.String)": {
+          "Lines": {
+            "14": 49,
+            "15": 49,
+            "16": 49,
+            "17": 49,
+            "18": 49,
+            "19": 49,
+            "20": 49,
+            "21": 49,
+            "22": 49
+          },
+          "Branches": [
+            {
+              "Line": 17,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 18,
+              "EndOffset": 32,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 49
+            },
+            {
+              "Line": 19,
+              "Offset": 48,
+              "EndOffset": 50,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 48,
+              "EndOffset": 56,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 49
+            },
+            {
+              "Line": 20,
+              "Offset": 65,
+              "EndOffset": 67,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 65,
+              "EndOffset": 79,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 49
+            },
+            {
+              "Line": 21,
+              "Offset": 88,
+              "EndOffset": 90,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 88,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 49
+            }
+          ]
+        }
+      }
+    }
+  }
+}

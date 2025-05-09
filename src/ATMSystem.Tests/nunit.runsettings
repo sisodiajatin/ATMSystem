@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <NUnit>
+    <DefaultTimeout>30000</DefaultTimeout>
+    <NumberOfTestWorkers>2</NumberOfTestWorkers>
+    <BasePath>.</BasePath>
+    <DiscoveryTimeout>10000</DiscoveryTimeout>
+    <ShadowCopyFiles>false</ShadowCopyFiles>
+    <InternalTraceLevel>Off</InternalTraceLevel>
+    <Verbose>false</Verbose>
+  </NUnit>
+  
+  <RunConfiguration>
+    <MaxCpuCount>2</MaxCpuCount>
+    <ResultsDirectory>.\TestResults</ResultsDirectory>
+    <TargetPlatform>x64</TargetPlatform>
+    <TargetFrameworkVersion>net8.0</TargetFrameworkVersion>
+    <TestSessionTimeout>60000</TestSessionTimeout>
+  </RunConfiguration>
+</RunSettings>

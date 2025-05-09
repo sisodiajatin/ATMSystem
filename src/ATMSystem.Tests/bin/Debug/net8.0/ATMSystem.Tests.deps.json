@@ -13,7 +13,8 @@
           "Microsoft.NET.Test.Sdk": "17.11.1",
           "NSubstitute": "5.1.0",
           "NUnit": "4.2.2",
-          "NUnit3TestAdapter": "4.6.0"
+          "NUnit3TestAdapter": "4.6.0",
+          "coverlet.msbuild": "6.0.4"
         },
         "runtime": {
           "ATMSystem.Tests.dll": {}
@@ -38,6 +39,7 @@
           }
         }
       },
+      "coverlet.msbuild/6.0.4": {},
       "Microsoft.CodeCoverage/17.11.1": {
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -525,6 +527,13 @@
       "sha512": "sha512-rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
       "path": "castle.core/5.1.1",
       "hashPath": "castle.core.5.1.1.nupkg.sha512"
+    },
+    "coverlet.msbuild/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Qa7Hg+wrOMDKpXVn2dw4Wlun490bIWsFW0fdNJQFJLZnbU27MCP0HJ2mPgS+3EQBQUb0zKlkwiQzP+j38Hc3Iw==",
+      "path": "coverlet.msbuild/6.0.4",
+      "hashPath": "coverlet.msbuild.6.0.4.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.11.1": {
       "type": "package",

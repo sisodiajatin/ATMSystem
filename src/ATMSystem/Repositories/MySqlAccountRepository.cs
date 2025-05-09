@@ -14,6 +14,10 @@ namespace ATMSystem.Repositories
             _connectionFactory = connectionFactory ?? throw new ArgumentNullException(nameof(connectionFactory));
         }
 
+        /// <summary>
+        /// Saves a new account to the database or updates an existing one.
+        /// </summary>
+        /// <exception cref="InvalidOperationException">Thrown if the save operation fails.</exception>
         public void Save(Account account)
         {
             using var connection = _connectionFactory.CreateConnection();
@@ -31,10 +35,17 @@ namespace ATMSystem.Repositories
             if (account.GetAccountNumber() == 0)
             {
                 command.CommandText = "SELECT LAST_INSERT_ID()";
-                account.SetAccountNumber(Convert.ToInt32(command.ExecuteScalar()));
+                var result = command.ExecuteScalar();
+                if (result == null)
+                    throw new InvalidOperationException("Failed to retrieve account number after save");
+                account.SetAccountNumber(Convert.ToInt32(result));
             }
         }
 
+        /// <summary>
+        /// Deletes an account by its account number.
+        /// </summary>
+        /// <returns>True if the account was deleted, false otherwise.</returns>
         public bool Delete(int accountNumber)
         {
             using var connection = _connectionFactory.CreateConnection();
@@ -45,6 +56,10 @@ namespace ATMSystem.Repositories
             return command.ExecuteNonQuery() > 0;
         }
 
+        /// <summary>
+        /// Updates an account's balance and status in the database.
+        /// </summary>
+        /// <exception cref="InvalidOperationException">Thrown if no account is updated.</exception>
         public void Update(Account account)
         {
             using var connection = _connectionFactory.CreateConnection();
@@ -55,9 +70,14 @@ namespace ATMSystem.Repositories
             AddParameter(command, "@status", account.GetStatus());
             AddParameter(command, "@number", account.GetAccountNumber());
             int rowsAffected = command.ExecuteNonQuery();
-            if (rowsAffected == 0) throw new InvalidOperationException("No account updated");
+            if (rowsAffected == 0)
+                throw new InvalidOperationException("No account updated");
         }
 
+        /// <summary>
+        /// Finds an account by its account number.
+        /// </summary>
+        /// <returns>The account if found, null otherwise.</returns>
         public Account? FindByNumber(int accountNumber)
         {
             using var connection = _connectionFactory.CreateConnection();
@@ -69,6 +89,10 @@ namespace ATMSystem.Repositories
             return reader.Read() ? MapToAccount(reader) : null;
         }
 
+        /// <summary>
+        /// Finds an account by its login.
+        /// </summary>
+        /// <returns>The account if found, null otherwise.</returns>
         public Account? FindByLogin(string login)
         {
             using var connection = _connectionFactory.CreateConnection();
@@ -80,14 +104,20 @@ namespace ATMSystem.Repositories
             return reader.Read() ? MapToAccount(reader) : null;
         }
 
+        /// <summary>
+        /// Helper method to add a parameter to a database command.
+        /// </summary>
         private static void AddParameter(IDbCommand command, string name, object value)
         {
             var parameter = command.CreateParameter();
             parameter.ParameterName = name;
-            parameter.Value = value;
+            parameter.Value = value ?? DBNull.Value;
             command.Parameters.Add(parameter);
         }
 
+        /// <summary>
+        /// Maps a database record to an Account object.
+        /// </summary>
         private static Account MapToAccount(IDataReader reader)
         {
             return new Account(

@@ -1,7 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RunSettings>
+  <!-- NUnit adapter settings -->
   <NUnit>
-    <NumberOfTestWorkers>16</NumberOfTestWorkers>
-    <TestLevelOfParallelism>16</TestLevelOfParallelism>
-    <ForceParallel>true</ForceParallel>
+    <NumberOfTestWorkers>4</NumberOfTestWorkers>
+    <BasePath>.</BasePath>
+    <DiscoveryTimeout>10000</DiscoveryTimeout>
+    <DefaultTimeout>10000</DefaultTimeout>  <!-- Changed from 5ms to 10000ms (10 seconds) -->
+    <ShadowCopyFiles>false</ShadowCopyFiles>
+    <InternalTraceLevel>Off</InternalTraceLevel>
+    <Verbose>false</Verbose>
   </NUnit>
+  
+  <!-- MSTest adapter settings -->
+  <MSTest>
+    <Parallelize>
+      <Workers>4</Workers>
+      <Scope>ClassLevel</Scope>
+    </Parallelize>
+  </MSTest>
+  
+  <!-- General run configuration -->
+  <RunConfiguration>
+    <MaxCpuCount>4</MaxCpuCount>
+    <ResultsDirectory>.\TestResults</ResultsDirectory>
+    <TargetPlatform>x64</TargetPlatform>
+    <TargetFrameworkVersion>net8.0</TargetFrameworkVersion>
+    <TestSessionTimeout>60000</TestSessionTimeout>  <!-- Changed to 60 seconds -->
+  </RunConfiguration>
+  
+  <!-- Note: Removed XPlat Code Coverage section since it's causing warnings -->
 </RunSettings>

@@ -25,12 +25,13 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: Test with AltCover
-      run: dotnet test --no-build --verbosity normal /p:AltCover=true /p:AltCoverFormat=OpenCover /p:AltCoverXmlReport=coverage.xml
+      run: dotnet test --no-build /p:AltCover=true /p:AltCoverFormat=OpenCover /p:AltCoverXmlReport=coverage.xml --settings ..\..\nunit.runsettings --verbosity detailed
+      working-directory: src/ATMSystem.Tests
 
     - name: Convert coverage report
       run: |
         dotnet tool install -g dotnet-reportgenerator-globaltool
-        reportgenerator -reports:"D:\ATMSystem\src\ATMSystem.Tests\coverage.xml" -targetdir:"D:\ATMSystem\coveragereport" -reporttypes:Html;Cobertura
+        reportgenerator -reports:"src/ATMSystem.Tests/coverage.xml" -targetdir:"coveragereport" -reporttypes:Html;Cobertura
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v4
